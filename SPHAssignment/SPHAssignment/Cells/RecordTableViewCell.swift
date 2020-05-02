@@ -20,7 +20,8 @@ class RecordTableViewCell: UITableViewCell {
         shadowView.layer.shadowRadius = 4
         shadowView.layer.cornerRadius = 8
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickOnTopRightImage))
-        self.addGestureRecognizer(gesture)
+        self.rightImageView.addGestureRecognizer(gesture)
+        self.rightImageView.isUserInteractionEnabled = true
     }
   public var actionClickHandler: ActionClickHandler?
      @objc func clickOnTopRightImage(sender : UITapGestureRecognizer) {
