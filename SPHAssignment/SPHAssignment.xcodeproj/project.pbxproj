@@ -19,6 +19,8 @@
 		825A355E245BFF4600051D8C /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825A355D245BFF4600051D8C /* DataRequest.swift */; };
 		825A4391245C5F8F001AEA67 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825A4390245C5F8F001AEA67 /* Record.swift */; };
 		825A4396245C63BD001AEA67 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825A4395245C63BD001AEA67 /* RecordTableViewCell.swift */; };
+		82B0B55C245D53F00090BDE1 /* QuarterRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B0B55B245D53F00090BDE1 /* QuarterRecordView.xib */; };
+		82B0B560245D5A1C0090BDE1 /* QuarterRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B55F245D5A1C0090BDE1 /* QuarterRecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		825A355D245BFF4600051D8C /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		825A4390245C5F8F001AEA67 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		825A4395245C63BD001AEA67 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		82B0B55B245D53F00090BDE1 /* QuarterRecordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuarterRecordView.xib; sourceTree = "<group>"; };
+		82B0B55F245D5A1C0090BDE1 /* QuarterRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarterRecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				825A3528245BF88200051D8C /* ViewController.swift */,
+				82B0B55F245D5A1C0090BDE1 /* QuarterRecordViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 		825A4397245C6446001AEA67 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				82B0B55B245D53F00090BDE1 /* QuarterRecordView.xib */,
 				825A352A245BF88200051D8C /* Main.storyboard */,
 				825A3532245BF88300051D8C /* LaunchScreen.storyboard */,
 			);
@@ -300,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B0B55C245D53F00090BDE1 /* QuarterRecordView.xib in Resources */,
 				825A3534245BF88300051D8C /* LaunchScreen.storyboard in Resources */,
 				825A3531245BF88300051D8C /* Assets.xcassets in Resources */,
 				825A352C245BF88200051D8C /* Main.storyboard in Resources */,
@@ -327,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B0B560245D5A1C0090BDE1 /* QuarterRecordViewController.swift in Sources */,
 				825A3529245BF88200051D8C /* ViewController.swift in Sources */,
 				825A355E245BFF4600051D8C /* DataRequest.swift in Sources */,
 				825A4396245C63BD001AEA67 /* RecordTableViewCell.swift in Sources */,
