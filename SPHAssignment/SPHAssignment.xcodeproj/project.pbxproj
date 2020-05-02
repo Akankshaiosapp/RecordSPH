@@ -21,6 +21,10 @@
 		825A4396245C63BD001AEA67 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825A4395245C63BD001AEA67 /* RecordTableViewCell.swift */; };
 		82B0B55C245D53F00090BDE1 /* QuarterRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B0B55B245D53F00090BDE1 /* QuarterRecordView.xib */; };
 		82B0B560245D5A1C0090BDE1 /* QuarterRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B55F245D5A1C0090BDE1 /* QuarterRecordViewController.swift */; };
+		82B0B563245D91890090BDE1 /* Records+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B561245D91890090BDE1 /* Records+CoreDataClass.swift */; };
+		82B0B564245D91890090BDE1 /* Records+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B562245D91890090BDE1 /* Records+CoreDataProperties.swift */; };
+		82B0B568245D93C90090BDE1 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B567245D93C90090BDE1 /* Interactor.swift */; };
+		82B0B56A245DC9200090BDE1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B569245DC9200090BDE1 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		825A4395245C63BD001AEA67 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		82B0B55B245D53F00090BDE1 /* QuarterRecordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuarterRecordView.xib; sourceTree = "<group>"; };
 		82B0B55F245D5A1C0090BDE1 /* QuarterRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarterRecordViewController.swift; sourceTree = "<group>"; };
+		82B0B561245D91890090BDE1 /* Records+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataClass.swift"; sourceTree = "<group>"; };
+		82B0B562245D91890090BDE1 /* Records+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		82B0B567245D93C90090BDE1 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		82B0B569245DC9200090BDE1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,7 @@
 				825A3557245BFA8F00051D8C /* Networking */,
 				825A355C245BFB9800051D8C /* Delegates */,
 				825A355B245BFB6C00051D8C /* Model */,
+				82B0B566245D93950090BDE1 /* Interactor */,
 				825A3535245BF88300051D8C /* Info.plist */,
 			);
 			path = SPHAssignment;
@@ -145,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				825A355D245BFF4600051D8C /* DataRequest.swift */,
+				82B0B569245DC9200090BDE1 /* Network.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -169,6 +179,8 @@
 		825A355B245BFB6C00051D8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				82B0B561245D91890090BDE1 /* Records+CoreDataClass.swift */,
+				82B0B562245D91890090BDE1 /* Records+CoreDataProperties.swift */,
 				825A352D245BF88200051D8C /* SPHAssignment.xcdatamodeld */,
 				825A4390245C5F8F001AEA67 /* Record.swift */,
 			);
@@ -200,6 +212,14 @@
 				825A3532245BF88300051D8C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		82B0B566245D93950090BDE1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				82B0B567245D93C90090BDE1 /* Interactor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,8 +355,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B0B560245D5A1C0090BDE1 /* QuarterRecordViewController.swift in Sources */,
+				82B0B563245D91890090BDE1 /* Records+CoreDataClass.swift in Sources */,
+				82B0B56A245DC9200090BDE1 /* Network.swift in Sources */,
+				82B0B568245D93C90090BDE1 /* Interactor.swift in Sources */,
 				825A3529245BF88200051D8C /* ViewController.swift in Sources */,
 				825A355E245BFF4600051D8C /* DataRequest.swift in Sources */,
+				82B0B564245D91890090BDE1 /* Records+CoreDataProperties.swift in Sources */,
 				825A4396245C63BD001AEA67 /* RecordTableViewCell.swift in Sources */,
 				825A4391245C5F8F001AEA67 /* Record.swift in Sources */,
 				825A3525245BF88200051D8C /* AppDelegate.swift in Sources */,
@@ -515,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3T739SYBS;
 				INFOPLIST_FILE = SPHAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,6 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3T739SYBS;
 				INFOPLIST_FILE = SPHAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

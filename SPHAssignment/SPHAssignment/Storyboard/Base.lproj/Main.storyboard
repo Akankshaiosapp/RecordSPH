@@ -113,33 +113,6 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="102.45535714285714"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Mzo-nz-Xmt">
-            <objects>
-                <viewController id="cET-t4-9kf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hDl-6S-VKv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="378" placeholderIntrinsicHeight="782" translatesAutoresizingMaskIntoConstraints="NO" id="STI-jk-CJl" customClass="QuarterRecordView" customModule="SPHAssignment" customModuleProvider="target">
-                                <rect key="frame" x="18" y="62" width="378" height="782"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="STI-jk-CJl" firstAttribute="leading" secondItem="zLo-zY-faW" secondAttribute="leading" constant="18" id="2pZ-ta-Reu"/>
-                            <constraint firstItem="zLo-zY-faW" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="STI-jk-CJl" secondAttribute="bottom" constant="18" id="6Gv-bl-uFi"/>
-                            <constraint firstItem="STI-jk-CJl" firstAttribute="top" secondItem="zLo-zY-faW" secondAttribute="top" constant="18" id="xCk-Dr-sGi"/>
-                            <constraint firstItem="zLo-zY-faW" firstAttribute="trailing" secondItem="STI-jk-CJl" secondAttribute="trailing" constant="18" id="zOF-P7-qlu"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="zLo-zY-faW"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dUT-Ru-35V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2130" y="86"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ls7-kO-QPl">
             <objects>

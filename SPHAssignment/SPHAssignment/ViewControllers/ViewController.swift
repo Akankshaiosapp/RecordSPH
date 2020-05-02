@@ -17,10 +17,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let data = DataRequest()
-        data.getSearchResults(completion: { results, errorMessage in
+        data.getResults(completion: { results, errorMessage in
             if let result = results {
-                self.results = result
-                for  res in self.results {
+                 self.results = result
+            } else {
+                if self.results.count == 0 {
+                    if let data = getRequest() {
+                        for res in data {
+                            self.results.append(Record(id: Int(res.id), quarter: res.quarter!, volumeOfMobileData: res.data!))
+                        }
+                    }
+                }
+            }
+            for  res in self.results {
            let component = res.quarter.components(separatedBy: "-")
              switch component[0] {
              case "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018":
@@ -39,18 +48,15 @@ class ViewController: UIViewController {
              default:
                  print("")
              }
-                    print("YearWiseData \(self.YearWiseData)")
                     
                 }
-            }
+            
             self.tableView.reloadData()
             if !errorMessage.isEmpty {
                 print("Error: " + errorMessage)
             }
         })
     }
-    
-    
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {

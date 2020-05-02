@@ -27,6 +27,10 @@
             <rect key="frame" x="0.0" y="0.0" width="629" height="318"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="leG-iI-3d7">
+                    <rect key="frame" x="0.0" y="0.0" width="629" height="318"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bde-bB-GLj">
                     <rect key="frame" x="18" y="18" width="593" height="282"/>
                     <subviews>
@@ -141,14 +145,19 @@
                     <constraints>
                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yEV-IB-bZa" secondAttribute="bottom" constant="18" id="7gY-Jo-N92"/>
                         <constraint firstItem="yEV-IB-bZa" firstAttribute="leading" secondItem="Bde-bB-GLj" secondAttribute="leading" constant="18" id="CVh-Ex-zgd"/>
+                        <constraint firstItem="yEV-IB-bZa" firstAttribute="centerY" secondItem="Bde-bB-GLj" secondAttribute="centerY" id="Z2B-PZ-gbh"/>
                         <constraint firstAttribute="trailing" secondItem="yEV-IB-bZa" secondAttribute="trailing" constant="18" id="aww-nT-s1U"/>
-                        <constraint firstItem="yEV-IB-bZa" firstAttribute="top" secondItem="Bde-bB-GLj" secondAttribute="top" constant="18" id="nIb-ZK-Z4r"/>
+                        <constraint firstItem="yEV-IB-bZa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Bde-bB-GLj" secondAttribute="top" constant="18" id="nIb-ZK-Z4r"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Bde-bB-GLj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="3zZ-3D-rKg"/>
+                <constraint firstItem="leG-iI-3d7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9uM-tK-XB3"/>
+                <constraint firstItem="leG-iI-3d7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Npf-Ib-Iib"/>
+                <constraint firstAttribute="bottom" secondItem="leG-iI-3d7" secondAttribute="bottom" id="O3L-vE-P1U"/>
+                <constraint firstAttribute="trailing" secondItem="leG-iI-3d7" secondAttribute="trailing" id="Zv7-4x-bmk"/>
                 <constraint firstAttribute="trailing" secondItem="Bde-bB-GLj" secondAttribute="trailing" constant="18" id="aQY-1S-fL0"/>
                 <constraint firstItem="Bde-bB-GLj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="avE-ao-PCP"/>
                 <constraint firstAttribute="bottom" secondItem="Bde-bB-GLj" secondAttribute="bottom" constant="18" id="tJf-wr-dby"/>

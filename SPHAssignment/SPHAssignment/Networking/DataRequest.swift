@@ -24,7 +24,10 @@ class DataRequest {
     // MARK: - Internal Methods
     //
     
-    func getSearchResults(completion: @escaping QueryResult) {
+    func getResults(completion: @escaping QueryResult) {
+        if Reachability.isConnectedToNetwork(){
+            print("Internet Connection Available!")
+        
         dataTask?.cancel()
         if let urlComponents = URLComponents(string: "https://data.gov.sg/api/action/datastore_search?resource_id=a807b7ab-6cad-4aa6-87d0-e283a7353a0f") {
             
@@ -49,6 +52,16 @@ class DataRequest {
             }
             dataTask?.resume()
         }
+        } else{
+                if let data = getRequest() {
+                    for res in data {
+                        self.records.append(Record(id: Int(res.id), quarter: res.quarter ?? "", volumeOfMobileData: res.data ?? ""))
+                    }
+                    DispatchQueue.main.async {
+                        completion(self.records, self.errorMessage)
+                    }
+                }
+            }
     }
     //
     // MARK: - Private Methods
@@ -56,6 +69,7 @@ class DataRequest {
     private func extractData(_ data: Data) {
         var responses: JSONDictionary?
         records.removeAll()
+        deleteRecord()
         do {
             responses = try JSONSerialization.jsonObject(with: data, options: []) as? JSONDictionary
         } catch let parseError as NSError {
@@ -76,6 +90,7 @@ class DataRequest {
                 let quarter = trackDictionary["quarter"] as? String,
                 let mobileData = trackDictionary["volume_of_mobile_data"] as? String{
                 records.append(Record(id: id, quarter: quarter, volumeOfMobileData: mobileData))
+                save(id: id, quarter: quarter, data: mobileData)
             }
         }
     }
