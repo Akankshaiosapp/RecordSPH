@@ -18,7 +18,7 @@ class QuarterRecordViewController: UIViewController {
     @IBOutlet weak var cardView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        cardView.backgroundColor = #colorLiteral(red: 0.9274971203, green: 1, blue: 0.8045932644, alpha: 1)
         cardView.layer.masksToBounds = false
         cardView.layer.shadowOffset = CGSize.init(width: 0.0, height: 1.0)
         cardView.layer.shadowColor = UIColor.black.cgColor
@@ -34,6 +34,21 @@ class QuarterRecordViewController: UIViewController {
         q2DataLabel.text = q2
         q3DataLabel.text = q3
         q4DataLabel.text = q4
+        if let first = q1?.toDouble(),
+            let second = q2?.toDouble(),
+            let third = q3?.toDouble(),
+            let forth = q4?.toDouble()
+        {
+            if first > second {
+            q2DataLabel.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.753464313, blue: 0.8226654866, alpha: 1)
+            }
+            if second > third {
+            q3DataLabel.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.753464313, blue: 0.8226654866, alpha: 1)
+            }
+            if third > forth {
+            q4DataLabel.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.753464313, blue: 0.8226654866, alpha: 1)
+            }
+        }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: true)
