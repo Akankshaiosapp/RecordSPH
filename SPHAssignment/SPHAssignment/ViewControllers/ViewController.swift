@@ -27,14 +27,16 @@ class ViewController: UIViewController {
             ///
             /// Get the results from Api request or fetch from  core data for offline usage
             ///
-            if let result = results {
+            if let result = results, results?.count ?? 0 > 0 {
                  self.results = result
             } else {
                 if self.results.count == 0 {
                     if let data = getRequest() {
+                       if data.count > 0 {
                         for res in data {
                             self.results.append(Record(id: Int(res.id), quarter: res.quarter!, volumeOfMobileData: res.data!))
                         }
+                    } 
                     }
                 }
             }

@@ -26,6 +26,7 @@
 		82B0B568245D93C90090BDE1 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B567245D93C90090BDE1 /* Interactor.swift */; };
 		82B0B56A245DC9200090BDE1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B569245DC9200090BDE1 /* Network.swift */; };
 		82B0B56C245E94D70090BDE1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B56B245E94D70090BDE1 /* Extensions.swift */; };
+		82B0B56E245EB2500090BDE1 /* Record.json in Resources */ = {isa = PBXBuildFile; fileRef = 82B0B56D245EB2500090BDE1 /* Record.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		82B0B567245D93C90090BDE1 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		82B0B569245DC9200090BDE1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		82B0B56B245E94D70090BDE1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		82B0B56D245EB2500090BDE1 /* Record.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Record.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				825A3530245BF88300051D8C /* Assets.xcassets */,
 				82B0B56B245E94D70090BDE1 /* Extensions.swift */,
+				82B0B56D245EB2500090BDE1 /* Record.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B0B55C245D53F00090BDE1 /* QuarterRecordView.xib in Resources */,
+				82B0B56E245EB2500090BDE1 /* Record.json in Resources */,
 				825A3534245BF88300051D8C /* LaunchScreen.storyboard in Resources */,
 				825A3531245BF88300051D8C /* Assets.xcassets in Resources */,
 				825A352C245BF88200051D8C /* Main.storyboard in Resources */,
@@ -545,6 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3T739SYBS;
 				INFOPLIST_FILE = SPHAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3T739SYBS;
 				INFOPLIST_FILE = SPHAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

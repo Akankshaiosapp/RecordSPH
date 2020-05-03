@@ -54,8 +54,12 @@ class DataRequest {
         }
         } else{
                 if let data = getRequest() {
+                    if data.count > 0 {
                     for res in data {
                         self.records.append(Record(id: Int(res.id), quarter: res.quarter ?? "", volumeOfMobileData: res.data ?? ""))
+                    }
+                    } else {
+                        readFile()
                     }
                     DispatchQueue.main.async {
                         completion(self.records, self.errorMessage)
@@ -93,5 +97,18 @@ class DataRequest {
                 save(id: id, quarter: quarter, data: mobileData)
             }
         }
+    }
+    func readFile() {
+        if let path = Bundle.main.path(forResource: "Record", ofType: "json") {
+                                  do {
+                                   
+                                     let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                                    extractData(data)
+                                        
+                                    } catch let parseError as NSError {
+                                        errorMessage += "JSON error: \(parseError.localizedDescription)\n"
+                                        return
+                                    }
+                              }
     }
 }
