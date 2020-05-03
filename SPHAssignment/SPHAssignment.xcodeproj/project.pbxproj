@@ -25,6 +25,7 @@
 		82B0B564245D91890090BDE1 /* Records+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B562245D91890090BDE1 /* Records+CoreDataProperties.swift */; };
 		82B0B568245D93C90090BDE1 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B567245D93C90090BDE1 /* Interactor.swift */; };
 		82B0B56A245DC9200090BDE1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B569245DC9200090BDE1 /* Network.swift */; };
+		82B0B56C245E94D70090BDE1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0B56B245E94D70090BDE1 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		82B0B562245D91890090BDE1 /* Records+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		82B0B567245D93C90090BDE1 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		82B0B569245DC9200090BDE1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		82B0B56B245E94D70090BDE1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				825A3530245BF88300051D8C /* Assets.xcassets */,
+				82B0B56B245E94D70090BDE1 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				825A355E245BFF4600051D8C /* DataRequest.swift in Sources */,
 				82B0B564245D91890090BDE1 /* Records+CoreDataProperties.swift in Sources */,
 				825A4396245C63BD001AEA67 /* RecordTableViewCell.swift in Sources */,
+				82B0B56C245E94D70090BDE1 /* Extensions.swift in Sources */,
 				825A4391245C5F8F001AEA67 /* Record.swift in Sources */,
 				825A3525245BF88200051D8C /* AppDelegate.swift in Sources */,
 				825A352F245BF88200051D8C /* SPHAssignment.xcdatamodeld in Sources */,

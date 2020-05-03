@@ -19,6 +19,9 @@ class RecordTableViewCell: UITableViewCell {
         shadowView.layer.shadowOpacity = 0.23
         shadowView.layer.shadowRadius = 4
         shadowView.layer.cornerRadius = 8
+        ///
+        ///Add tap event on Image View to show quarter data in pop up and heighlight the row if data is decreasing.
+        ///
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickOnTopRightImage))
         self.rightImageView.addGestureRecognizer(gesture)
         self.rightImageView.isUserInteractionEnabled = true

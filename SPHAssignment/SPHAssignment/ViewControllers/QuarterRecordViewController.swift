@@ -29,11 +29,15 @@ class QuarterRecordViewController: UIViewController {
         q2Label.text = "Q2"
         q3Label.text = "Q3"
         q4Label.text = "Q4"
+        /// Set data quarterly
         yearLabel.text = year
         q1DataLabel.text = q1
         q2DataLabel.text = q2
         q3DataLabel.text = q3
         q4DataLabel.text = q4
+        ///
+        /// Add the logic to heighlight the row if the quarter showing decrease in data.
+        ///
         if let first = q1?.toDouble(),
             let second = q2?.toDouble(),
             let third = q3?.toDouble(),
@@ -53,6 +57,7 @@ class QuarterRecordViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: true)
     }
+    /// Set selected year
     public var year: String? {
         didSet {
             if yearLabel != nil {
@@ -60,6 +65,7 @@ class QuarterRecordViewController: UIViewController {
             }
         }
     }
+    /// Set quarter 1 data
     public var q1: String? {
         didSet {
             if q1DataLabel != nil {
@@ -67,6 +73,7 @@ class QuarterRecordViewController: UIViewController {
             }
         }
     }
+    /// Set quarter 2 data
     public var q2: String? {
         didSet {
             if q2DataLabel != nil {
@@ -74,6 +81,7 @@ class QuarterRecordViewController: UIViewController {
             }
         }
     }
+    /// Set quarter 3 data
     public var q3: String? {
         didSet {
             if q3DataLabel != nil {
@@ -81,6 +89,7 @@ class QuarterRecordViewController: UIViewController {
             }
         }
     }
+    /// Set quarter 4 data
     public var q4: String? {
         didSet {
             if q4DataLabel != nil {
