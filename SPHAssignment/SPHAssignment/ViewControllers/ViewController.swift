@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     ///
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.accessibilityIdentifier = "ViewController"
+        tableView.accessibilityIdentifier = "table"
         let data = DataRequest()
         data.getResults(completion: { results, errorMessage in
             ///

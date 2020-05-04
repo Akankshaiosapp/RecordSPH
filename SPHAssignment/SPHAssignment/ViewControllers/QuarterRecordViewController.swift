@@ -18,6 +18,7 @@ class QuarterRecordViewController: UIViewController {
     @IBOutlet weak var cardView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.accessibilityIdentifier = "QuarterRecordViewController"
         cardView.backgroundColor = #colorLiteral(red: 0.9274971203, green: 1, blue: 0.8045932644, alpha: 1)
         cardView.layer.masksToBounds = false
         cardView.layer.shadowOffset = CGSize.init(width: 0.0, height: 1.0)
